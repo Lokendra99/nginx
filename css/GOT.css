@@ -1,0 +1,166 @@
+
+
+
+body{
+	/*background-color: red;*/
+	background-image: linear-gradient(rgba(30, 33, 29, 0.7),rgba(37, 48, 44, 0.7)),url('back.jpg');
+	background-size:cover;
+	height:1vh;
+	width:auto;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.boxng{
+	padding: 4%;
+	text-align: center;
+}
+
+.shftng{
+	text-align: center;
+}
+
+
+.stlying_div{	text-align: center;
+	margin-bottom: 40px;
+	padding: 15px;
+
+	font-family: 'Montserrat', serif;
+	/*font-size: 300;*/
+	font-weight:300;
+	font-size: 24px;
+	text-transform: uppercase;
+
+  border-radius: 10px;
+	margin-left: auto;
+  margin-right: auto;
+
+}
+.stlying_div1{
+background-color:#f4ab35 ;
+box-shadow: 10px 10px 7px #a96c09;
+
+}
+.stlying_div2{
+background-color:#d9fcc0 ;
+color: white;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.44);
+}
+.stlying_div3{
+background-color:rgba(187, 187, 187, 0.79);
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.44);
+}
+
+
+.styling_link:link{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+
+}
+
+.tbl_styling{
+	background-color:rgba(252, 248, 227, 0.82);
+	box-shadow: 10px 10px 0 rgba(255, 255, 255, 0.31);
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .font_change{
+        font-size: 1.3em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+		color: white;
+		}
+
+
+}
+@media only screen and (min-device-width: 482px) and (max-device-width:767px){
+
+    .font_change{
+        font-size: 1em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 20px;
+		color: white;
+		}
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .font_change{
+        font-size: 1.7em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 30px;
+		color: white;
+		}
+
+
+}
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1223px) {
+
+    .font_change{
+        font-size: 1.3em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 30px;
+		color: white;
+		}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+
+    .font_change{
+        font-size: 1.3em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: 30px;
+		color: white;
+		}
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+
+    .font_change{
+        font-size: 1em;
+    }
+		.main_head_styling{
+		text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: 30px;
+		color: white;
+		}
+
+
+}
