@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="game0fThrones" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/GOT.css">
+    <script src="../controller/GOT.js"></script>
+</head>
+
+<body>
+  <div  id="hiding">
+    <div class="main_head_styling animated fadeIn">
+      Game of Thrones
+    </div>
+
+    <div class="shftng animated fadeIn">
+      <a href="#GOT"><button class="btn btn-lg btn-success font_change" onclick="hiding_box()">Let's Begin</button></a>
+    </div>
+    </div>
+
+
+<div class="boxng animated fadeIn" ng-view ></div>
+
+</body>
