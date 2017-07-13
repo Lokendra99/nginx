@@ -1,0 +1,15 @@
+<div class="container" ng-controller="ctrl3 as ct3">
+
+    <table class="table table-bordered table-responsive font_change tbl_styling" style="text-align:left">
+        <tr><td><b>{{'Culture'}}</b></td><td>{{ct3.netdata_characters[ct3.which_character].culture|changing_empty_space_to_Unknown}}</td></tr>
+        <tr><td><b>{{'Gender'}}</b></td><td>{{ct3.netdata_characters[ct3.which_character].gender|changing_empty_space_to_Unknown}}</td></tr>
+        <tr><td><b>{{'Mother'}}</b></td><td>{{ct3.netdata_characters[ct3.which_character].mother|changing_empty_space_to_Unknown}}</td></tr>
+        <tr><td><b>{{'Father'}}</b></td><td>{{ct3.netdata_characters[ct3.which_character].father|changing_empty_space_to_Unknown}}</td></tr>
+        <tr><td><b>{{'Books'}}</b></td></tr>
+        <tr>
+          <tr ng-repeat='x in ct3.netdata_characters[ct3.which_character].books|limitTo:ct3.limiting_value'>
+          <td></td><td><a href="{{x}}">{{x}}</a></td></tr></tr>
+    </table>
+    <button class="btn btn-primary font_change" ng-click="ct3.limiting_value = ct3.limiting_value+2"  ng-if="ct3.netdata_book_detail[ct3.which_character].books">Show more</button>
+
+</div>

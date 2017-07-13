@@ -1,0 +1,29 @@
+
+<div class="container" ng-if="gotctrl.netdata_books">
+  <form class="form-inline">
+    <div  style="margin-bottom:15px;margin-top:15px;">
+      <div class="input-group font_change">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input type="text" ng-model="authorname" class="form-control" placeholder="Sort by Authors"></input><br>
+      </div>
+    </div>
+    <div style="margin-bottom:15px;margin-top:15px;">
+      <div class="input-group font_change">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+        <input type="text" ng-model="bookname" class="form-control" placeholder="Sort by Book"></input>
+      </div>
+    </div>
+  </form>
+
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 animated bounceInUp">
+  <div class="stlying_div stlying_div1 font_change" ng-repeat="y in gotctrl.netdata_books|orderBy:'name'|filter:authorname|filter:bookname">
+    <a class="styling_link " href="#book/{{gotctrl.netdata_books.indexOf(y)}}"> {{y.name|changing_empty_space_to_Unknown}} <br> By<br></a>
+    <div ng-repeat="z in y.authors">{{z|changing_empty_space_to_Unknown}}</div></a>
+  </div>
+
+</div>
+
+</div>
+</div>

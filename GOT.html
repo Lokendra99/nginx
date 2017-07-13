@@ -1,0 +1,23 @@
+
+  <div   ng-controller="gotController as gotctrl">
+    <div>
+      <h3 style="color:white" class="font_change">Kindly Choose any category and click!!</h2>
+<form class="form-inline">
+      <div class="form-group" style="margin-bottom:10px">
+        <select class="form-control font_change" ng-model="mydata">
+          <option>books</option>
+          <option>characters</option>
+          <option>houses</option>
+        </select>
+          <button class=" btn btn-primary font_change" ng-click="gotctrl.slct()">Click Me</button>
+    </div>
+  </div>
+
+
+
+         <characters-detail id="chart"></characters-detail>
+         <books-detail id="boks" ></books-detail>
+         <houses-detail id="hose"></houses-detail>
+
+
+  </div>

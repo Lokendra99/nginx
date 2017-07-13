@@ -1,0 +1,27 @@
+
+server {
+	location / {
+	root /home/lokendra/got;
+	index /views/main.html;
+	}
+
+	error_page 404 /custom_404.html;
+
+	location = /custom_404.html {
+	root /home/lokendra/got;
+	internal;
+	}
+	
+	error_page 500 /custom_500.html;
+
+	location = /custom_500.html {
+	root /home/lokendra/got;
+	internal;
+	}
+
+
+
+	 
+}
+
+

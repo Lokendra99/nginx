@@ -1,0 +1,21 @@
+<div class="container" ng-if="gotctrl.netdata_houses">
+  <div style="margin-bottom:20px;margin-top:20px;">
+    <div class="form-group row">
+
+        <div class="input-group font_change">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" ng-model="housename" class="form-control" placeholder="Sort by Houses"></input><br>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 animated bounceInUp">
+    <div class="stlying_div stlying_div3" ng-repeat="y in gotctrl.netdata_houses|orderBy:'name'|filter:housename" >
+  <a  class="styling_link font_change" style="color:white" href="#house/{{gotctrl.netdata_houses.indexOf(y)}}"><blockquote>{{y.coatOfArms|changing_empty_space_to_Unknown}}</blockquote>
+    <br>{{y.name|changing_empty_space_to_Unknown}}</a>
+  </div>
+</div>
+</div>
+</div>

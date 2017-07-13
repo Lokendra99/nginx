@@ -1,0 +1,16 @@
+<div class="container" ng-controller="ctrl2 as ct">
+
+    <table class="table table-hover table-bordered table-responsive font_change  tbl_styling" style="text-align:left">
+
+        <tr><td><b>{{'Name'}}</b></td><td>{{ct.netdata_book_detail[ct.which_book].name}}</td></tr>
+        <tr><td><b>{{'Url'}}</b></td><td>{{ct.netdata_book_detail[ct.which_book].url}}</td></tr>
+        <tr><td><b>{{'ISBN'}}</b></td><td>{{ct.netdata_book_detail[ct.which_book].isbn}}</td></tr>
+        <tr><td><b>{{'Country'}}</b></td><td>{{ct.netdata_book_detail[ct.which_book].country}}</td></tr>
+        <tr><td><b>{{'Characters'}}</b></td></tr>
+        <tr>
+          <tr ng-repeat='x in ct.netdata_book_detail[ct.which_book].characters|limitTo:ct.limiting_value'>
+          <td></td><td><a href="{{x}}">{{x}}</a></td></tr></tr>
+    </table>
+    <button class="btn btn-primary font_change" ng-click="ct.limiting_value = ct.limiting_value+2"  ng-if="ct.netdata_book_detail[ct.which_book].country">Show more</button>
+
+</div>

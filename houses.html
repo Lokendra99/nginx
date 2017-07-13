@@ -1,0 +1,69 @@
+<div class="container" ng-controller="ctrl4 as ct4">
+  <table  class="table table-hover table-bordered table-responsive font_change  tbl_styling" style="text-align:left">
+    <tr >
+      <td>
+        <b>{{'coatOfArms'}}</b>
+      </td>
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].coatOfArms|linky|changing_empty_space_to_Unknown">
+        {{ct4.netdata_houses[ct4.which_house].coatOfArms}}
+      </td>
+    </tr>
+    <tr>
+      <b><td>
+        <b>{{'currentLord'}}</b>
+      </td>
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].currentLord|linky|changing_empty_space_to_Unknown">
+        {{ct4.netdata_houses[ct4.which_house].currentLord}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>{{'heir'}}</b>
+      </td>
+
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].heir|linky|changing_empty_space_to_Unknown">
+        <b>{{ct4.netdata_houses[ct4.which_house].heir}}
+      </td>
+    </tr>
+    <tr>
+      <b><td>
+        <b>{{'founder'}}</b>
+      </td>
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].founder|linky|changing_empty_space_to_Unknown">
+          <b>{{ct4.netdata_houses[ct4.which_house].founder}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>{{'name'}}</b>
+      </td>
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].name|linky|changing_empty_space_to_Unknown">
+        <b>{{ct4.netdata_houses[ct4.which_house].name}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>{{'overlord'}}</b>
+      </td>
+      <td ng-bind-html="ct4.netdata_houses[ct4.which_house].overlord|linky|changing_empty_space_to_Unknown">
+        {{ct4.netdata_houses[ct4.which_house].overlord}}
+      </td>
+    </tr>
+      <tr>
+        <td>
+        <b>  {{'region'}}</b>
+        </td>
+        <td ng-bind-html="ct4.netdata_houses[ct4.which_house].region|linky|changing_empty_space_to_Unknown">
+          {{ct4.netdata_houses[ct4.which_house].region}}
+        </td>
+      </tr>
+      <tr>
+        <b><td>
+          <b>{{'url'}}</b>
+        </td>
+        <td  ng-bind-html="ct4.netdata_houses[ct4.which_house].url|linky|changing_empty_space_to_Unknown">
+           {{ct4.netdata_houses[ct4.which_house].url}}
+         </td>
+       </tr>
+    </table>
+</div>
